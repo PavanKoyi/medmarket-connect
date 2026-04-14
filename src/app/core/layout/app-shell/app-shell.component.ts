@@ -56,7 +56,7 @@ import { AuthService } from '../../auth/auth.service';
 
       <mat-sidenav-content>
         <mat-toolbar color="primary" class="topbar">
-          <button mat-icon-button type="button" (click)="collapsed.set(!collapsed())" aria-label="Toggle navigation">
+          <button mat-icon-button class="topbar-button" type="button" (click)="collapsed.set(!collapsed())" aria-label="Toggle navigation">
             <mat-icon>menu</mat-icon>
           </button>
 
