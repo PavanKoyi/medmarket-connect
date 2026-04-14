@@ -34,17 +34,15 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
-        env:
-          VITE_BASE_PATH: /Portfolio/
+        run: npm run build:gh-pages
 
       - name: Verify build output
         run: |
           echo "Checking built files..."
-          ls -la dist/
+          ls -la docs/browser/
           echo "---"
           echo "Checking index.html paths:"
-          grep -E "(src=|href=)" dist/index.html || echo "No script/link tags found"
+          grep -E "(src=|href=)" docs/browser/index.html || echo "No script/link tags found"
           echo "---"
           echo "Build verification complete"
 
@@ -54,7 +52,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './docs/browser'
 
   deploy:
     environment:
