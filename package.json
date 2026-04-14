@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:gh-pages": "ng build --configuration production",
-    "deploy": "ng build --configuration production && ngh --dir docs",
+    "deploy": "ng build --configuration production && ngh --dir docs/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
