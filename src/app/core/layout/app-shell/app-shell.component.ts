@@ -63,6 +63,7 @@ import { AuthService } from '../../auth/auth.service';
           <div class="topbar-title">
             <span class="brand">MedMarket Connect</span>
             <span class="pill">DEMO</span>
+            <div class="trademark">MedMarken Connect Inc - PavanKoyi - 2026</div>
           </div>
 
           <span class="spacer"></span>

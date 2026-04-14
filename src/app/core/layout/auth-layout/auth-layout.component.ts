@@ -10,6 +10,7 @@ import { RouterOutlet } from '@angular/router';
       <div class="auth-content">
         <router-outlet />
       </div>
+      <div class="trademark">MedMarken Connect Inc - PavanKoyi - 2026</div>
     </div>
   `,
   styleUrl: './auth-layout.component.scss'
