@@ -1,0 +1,102 @@
+.shell {
+  height: 100vh;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 56px;
+  background: linear-gradient(95deg, #0f3fbf 0%, #1d4ed8 55%, #0ea5e9 100%);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.topbar-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 8px;
+}
+
+.brand {
+  font-weight: 750;
+  letter-spacing: 0.3px;
+}
+
+.pill {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.profile-name {
+  margin-left: 8px;
+  font-weight: 550;
+}
+
+.sidenav {
+  width: 280px;
+  border-right: 1px solid #dbe3f2;
+  background: linear-gradient(180deg, #f8fbff 0%, #f2f6ff 100%);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 14px;
+}
+
+.product {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.env-badge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(30, 136, 229, 0.12);
+  border: 1px solid rgba(30, 136, 229, 0.25);
+  color: rgba(30, 136, 229, 1);
+}
+
+a.active {
+  background: linear-gradient(90deg, rgba(29, 78, 216, 0.18), rgba(14, 165, 233, 0.12));
+  border-left: 3px solid #1d4ed8;
+}
+
+.breadcrumb-bar {
+  padding: 12px 18px;
+  border-bottom: 1px solid #dbe3f2;
+  font-size: 13px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.breadcrumb-bar a {
+  color: rgba(0, 0, 0, 0.72);
+  text-decoration: none;
+}
+
+.sep {
+  margin: 0 6px;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.content {
+  padding: 18px;
+  background: transparent;
+  min-height: calc(100vh - 56px);
+}
+

@@ -9,6 +9,7 @@ import { DashboardPageComponent } from './features/dashboard/dashboard-page.comp
 import { MarketplaceSearchPageComponent } from './features/marketplace/marketplace-search-page.component';
 import { MarketplaceComparePageComponent } from './features/marketplace/marketplace-compare-page.component';
 import { CartPageComponent } from './features/cart/cart-page.component';
+import { CheckoutReviewPageComponent } from './features/cart/checkout-review-page.component';
 import { OrdersListPageComponent } from './features/orders/orders-list-page.component';
 import { OrderDetailPageComponent } from './features/orders/order-detail-page.component';
 import { SmartIntegrationPageComponent } from './features/smartintegration/smartintegration-page.component';
@@ -70,6 +71,12 @@ export const routes: Routes = [
         ]
       },
       { path: 'cart', component: CartPageComponent, title: 'Cart', data: { breadcrumb: 'Cart' } },
+      {
+        path: 'cart/checkout',
+        component: CheckoutReviewPageComponent,
+        title: 'Checkout Review',
+        data: { breadcrumb: 'Checkout' }
+      },
       { path: 'orders', component: OrdersListPageComponent, title: 'Orders', data: { breadcrumb: 'Orders' } },
       {
         path: 'orders/:id',

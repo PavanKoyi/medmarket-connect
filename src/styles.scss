@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global investor-demo style system */
+
+:root {
+  --mmc-bg: #f2f5fb;
+  --mmc-surface: #ffffff;
+  --mmc-text: #101828;
+  --mmc-muted: #475467;
+  --mmc-primary: #1d4ed8;
+  --mmc-primary-2: #0ea5e9;
+  --mmc-border: #dbe3f2;
+  --mmc-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --mmc-radius: 14px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Roboto, 'Helvetica Neue', sans-serif;
+  color: var(--mmc-text);
+  background: radial-gradient(1200px 420px at 0% -10%, rgba(29, 78, 216, 0.16), transparent),
+    radial-gradient(1000px 420px at 110% -20%, rgba(14, 165, 233, 0.15), transparent),
+    var(--mmc-bg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.02em;
+}
+
+.mat-mdc-card {
+  border-radius: var(--mmc-radius) !important;
+  border: 1px solid var(--mmc-border) !important;
+  box-shadow: var(--mmc-shadow) !important;
+  background: linear-gradient(180deg, #ffffff 0%, #fcfdff 100%) !important;
+}
+
+.mat-mdc-card-header {
+  padding-bottom: 10px !important;
+}
+
+.mat-mdc-card-title {
+  font-weight: 700 !important;
+}
+
+.mat-mdc-card-subtitle {
+  color: var(--mmc-muted) !important;
+}
+
+.mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 12px;
+}
+
+.mat-mdc-unelevated-button.mat-primary {
+  box-shadow: 0 8px 18px rgba(29, 78, 216, 0.28);
+}
+
+.mat-mdc-header-row {
+  background: #f8faff;
+}
+
+.mat-mdc-table .mat-mdc-row:hover {
+  background: #f8fbff;
+}
