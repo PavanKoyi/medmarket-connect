@@ -1,0 +1,15 @@
+.auth-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(1200px 500px at 10% 0%, rgba(30, 136, 229, 0.12), transparent),
+    radial-gradient(900px 400px at 90% 10%, rgba(94, 53, 177, 0.12), transparent),
+    #0b1220;
+}
+
+.auth-content {
+  width: min(980px, 100%);
+}
+

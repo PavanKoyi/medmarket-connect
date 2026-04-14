@@ -4,9 +4,9 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  template: `<router-outlet />`,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'medmarket-connect';
+  title = 'MedMarket Connect';
 }

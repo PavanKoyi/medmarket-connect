@@ -1,0 +1,74 @@
+.login-grid {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.login-form {
+  display: grid;
+  gap: 14px;
+}
+
+.divider {
+  margin: 18px 0;
+}
+
+.demo-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.demo-title {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.demo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.error {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(211, 47, 47, 0.08);
+  color: #b71c1c;
+  font-weight: 500;
+}
+
+.forgot {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  justify-self: start;
+}
+
+.right-rail {
+  color: rgba(255, 255, 255, 0.92);
+  padding: 16px 6px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+  .login-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
